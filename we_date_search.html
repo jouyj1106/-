@@ -5,16 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title>Button</title>
-
-
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
         <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://use.fontawesome.com/672e9f10f7.js"></script>
-
         <style>
-            #we_wrap {
+        #we_wrap {
         padding-top:50px;
         }
         .we_blank {
@@ -135,7 +131,7 @@
         width: 100%;
         height: auto;
         
-        padding : 20px 20px 50px 20px;
+        padding :20px;
         
         }
         #form-control {
@@ -147,24 +143,21 @@
             margin-top: 12px;
 
         }
-
         </style>
         <script>
-            
+        
         </script>
     </head>
-
     <body>
         <div id="we_wrap">
             <nav class="navbar navbar-fixed-top">
                 <div class="we_top_bar">
                     <a href="#"><span><i class="fa fa-chevron-left"></i></span></a>
-                    <span class="title">데이트코스</span> 
+                    <a href="#"><span><input type="text" id="form-control" placeholder="Search for..."></span></a>
                     <a href="#"><i class="we_top_icon fa fa-folder-o"></i></a>
                     <a href="#"><i class="we_top_icon fa fa-search"></i></a>
                 </div>
             </nav>
-
             <div id="we_contents">
                 
                 <div class="we_container">
@@ -207,29 +200,28 @@
                         <a href="#carousel-example-generic" class="right carousel-control" data-slide="next"><span class="icon-next"></span></a>
                     </div>
                     <!-- 캐러셀끝 -->
-                
-                
-                <!-- 중간 글 -->
-                <div id = "middle">
-                    <p>오늘 어디갈래?</p>
+                    
+                    
+                    <!-- 중간 글 -->
+                    <div id = "middle">
+                        <p>오늘 어디갈래?</p>
+                    </div>
+                    <!-- 중간글 끝 -->
+                    <!-- 지도맵 시작 -->
+                    <div class="map"><img src="img/map.jpg" alt=""></div>
+                    <!-- 지도맵 끝 -->
                 </div>
-                <!-- 중간글 끝 -->
-                <!-- 지도맵 시작 -->
-                <div class="map"><img src="img/map.jpg" alt=""></div>
-                <!-- 지도맵 끝 -->
+                <nav class="navbar navbar-fixed-bottom">
+                    <div class = "we_bottom_bar">
+                        <ul class="we_menu">
+                            <li><a href="#"><i class="we_bottom_icon fa fa-home"><span>HOME</span></i></a></li>
+                            <li><a href="#"><i class="we_bottomicon fa fa-map-marker"><span>DATE</span></i></a></li>
+                            <li><a href="#"><i class="we_bottom_icon fa fa-comments-o"><span>COMMUNITY</span></i></a></li>
+                            <li><a href="#"><i class="we_bottom_icon fa fa-user-circle-o"><span>PROFILE</span></i></a></li>
+                            <li><a href="#"><i class="we_bottom_icon fa fa-question"><span>SERVICE</span></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-
-            <nav class="navbar navbar-fixed-bottom">
-                <div class = "we_bottom_bar">
-                    <ul class="we_menu">
-                        <li><a href="#"><i class="we_bottom_icon fa fa-home"><span>HOME</span></i></a></li>
-                        <li><a href="#"><i class="we_bottomicon fa fa-map-marker"><span>DATE</span></i></a></li>
-                        <li><a href="#"><i class="we_bottom_icon fa fa-comments-o"><span>COMMUNITY</span></i></a></li>
-                        <li><a href="#"><i class="we_bottom_icon fa fa-user-circle-o"><span>PROFILE</span></i></a></li>
-                        <li><a href="#"><i class="we_bottom_icon fa fa-question"><span>SERVICE</span></i></a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </body>
-</html>
+        </body>
+    </html>
