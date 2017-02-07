@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Button</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/672e9f10f7.js"></script>
+        <style>
+        .we_container {
+            padding-top: 50px;
+        }
+        body {
+        width: auto;
+        }
+        .top_bar{
+        padding-left: 17px;
+        }
+        .we_blank {
+        display:block;
+        padding-left: 50px;
+        }
+        
+        .navbar-header:after{
+        content: '';
+        display: block;
+        clear: both;
+        float:none;
+        }
+        .navbar-header{
+        color:white;
+        }
+        .navbar-header > span{
+        line-height: 50px;
+        font-size: 16px;
+        }
+        .navbar-fixed-top{
+        height: 50px;
+        background-color: rgb(39, 50, 56);
+        }
+        .navbar {
+        min-height: 0;
+        }
+        .navbar-fixed-bottom{
+        background-color: rgb(224, 224, 224);
+        height: 40px;
+        }
+        
+        .menu{
+        list-style: none;
+        display: table;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        }
+        .menu>li{
+        display: table-cell;
+        width: 20%;
+        height: 40px;
+        text-align: center;
+        padding-top: 3px;
+        }
+        
+        ul.menu > li i{
+        font-size: 20px;
+        color:rgb(158, 158, 158);
+        }
+        ul.menu>li span{
+        display: block;
+        font-size: 10px;
+        color:rgb(158, 158, 158);
+        }
+        .title_icon{
+        font-size: 18px;
+        color: white;
+        float: right;
+        line-height: 50px;
+        padding-right: 25px;
+        }
+        .fa-search{
+        padding-right: 20px;
+        }
+        .fa-chevron-left{
+        padding-left: 18px;
+        padding-right: 18px;
+        color: white;
+        }
+        .carousel {
+        height: 240px;
+
+        display: block;
+        
+        
+        }
+        .carousel-inner > .item > img {
+        height: 240px;
+        width: 100%;
+        }
+        .carousel-inner .carousel-caption {
+        padding-left: 0;
+        padding-right: 30px;
+        background-color: rgba(0, 0, 0) !important;
+        text-align: left;
+        }
+       
+        @media (min-width: 768px) {
+        .date_content {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.4;
+        }
+        .date_title {
+        font-size: 24px;
+        }
+        }
+        #middle {
+        font-size: 15px;
+        width: 100%;
+        color: white;
+        text-align: center;
+        background-color: rgb(64,64,64);
+        height: 40px;
+        line-height: 40px;
+        }
+        .map > img {
+        min-width: 324px;
+        min-height: 415px;
+        width: 100%;
+        height: auto;
+        display: block;
+        padding : 20px;
+        
+
+        }
+        </style>
+        <script>
+        
+        </script>
+    </head>
+    <body>
+        <div id="we_wrap">
+            <nav class="navbar navbar-fixed-top">
+                <div class = "top_bar">
+                    <!-- 로고 + 모바일용 메뉴 버튼 -->
+                    <div class="navbar-header">
+                        <!-- 모바일용 메뉴 버튼 (해상도가 줄어들면 나온다.)-->
+                        <a href="#"><span><i class="fa fa-chevron-left"></i></span></a>
+                        <span class="header">데이트코스</span>
+                        <a href="#"><i class="title_icon fa fa-folder-o"></i></a>
+                        <a href="#"><i class="title_icon fa fa-search"></i></a>
+                    </div>
+                    <!-- 로고 + 모바일용 메뉴 버튼 끝-->
+                    <!--모바일에서만 열렸다가 닫혔다 함 -->
+                    </div><!-- /.container -->
+                </nav>
+                <!-- 캐러셀 시작 -->
+
+                <div class="we_container">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-generic" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/slide-1.jpg" alt="슬라이더(1)">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h3>푸른 바다의 전설</h3>
+                                        <p class="date_content">여기서 잠들다....</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/slide-2.jpg" alt="슬라이더(2)">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h3>오겡끼데스까</h3>
+                                        <p class="date_content">보고싶다는 뜻이지?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/slide-3.jpg" alt="슬라이더(3)">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h3>강남 갔던 제비</h3>
+                                        <p class="date_content">비둘기랑 싸움</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#carousel-example-generic" class="left carousel-control" data-slide="prev"><span class="icon-prev"></span></a>
+                        <a href="#carousel-example-generic" class="right carousel-control" data-slide="next"><span class="icon-next"></span></a>
+                    </div>
+                    <!-- 캐러셀끝 -->
+                
+                
+                <!-- 중간 글 -->
+                <div id = "middle">
+                    <p>오늘 어디갈래?</p>
+                </div>
+                <!-- 중간글 끝 -->
+                <!-- 지도맵 시작 -->
+                <div class="map"><img src="img/map.jpg" alt=""></div>
+                <!-- 지도맵 끝 -->
+                
+                <!-- 하단navbar -->
+                <nav class="navbar navbar-fixed-bottom">
+                    <div class = "bottom_bar">
+                        <ul class="menu">
+                            <li><a href="#"><i class="icon fa fa-home"><span>HOME</span></i></a></li>
+                            <li><a href="#"><i class="icon fa fa-map-marker"><span>DATE</span></i></a></li>
+                            <li><a href="#"><i class="icon fa fa-comments-o"><span>COMMUNITY</span></i></a></li>
+                            <li><a href="#"><i class="icon fa fa-user-circle-o"><span>PROFILE</span></i></a></li>
+                            <li><a href="#"><i class="icon fa fa-question"><span>SERVICE</span></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+             </div>   
+                <!-- 하단navbar끝 -->
+            </div>
+        </body>
+    </html>
